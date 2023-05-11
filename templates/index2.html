@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                * {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+}
+
+.image {
+  position: relative;
+  width: 20%;
+  height: 20%;
+  margin: 2%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-out;
+}
+.image img{
+    width: 100%;
+}
+.image:nth-child(2){
+  position: relative;
+  top: 10%;
+}
+.image:nth-child(3){
+  position: relative;
+  top: 30%;
+}
+.image:nth-child(4){
+  position: relative;
+  top: 50%;
+}
+.image:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .image {
+    width: 30%;
+    height: 30%;
+    margin: 3%;
+  }
+}
+
+
+    </style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="../static/images/WhatsApp Image 2023-04-30 at 12.48.10.jpg" alt="">
+             <div class="overlay"></div>
+        </div>
+        <div class="image">
+            <img src="../static/images/WhatsApp Image 2023-04-30 at 12.48.11.jpg" alt="">
+             <div class="overlay"></div>
+        </div>
+        <div class="image">
+            <img src="../static/images/WhatsApp Image 2023-04-30 at 12.48.12.jpg" alt="">
+             <div class="overlay"></div>
+        </div>
+        <div class="image">
+            <img src="../static/images/WhatsApp Image 2023-04-30 at 12.48.13.jpg" alt="">
+             <div class="overlay"></div>
+        </div>
+      </div>
+</body>
+</html>
